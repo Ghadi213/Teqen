@@ -1,0 +1,494 @@
+
+/* === ضبط عام للصفحة والخطوط === */
+body {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  display: flex;
+  background-color: #f5f9fc;
+}
+
+/* === القائمة الجانبية === */
+
+.sidebar {
+  width: 220px;
+  background: linear-gradient(to bottom, #125F89, #125F89);
+  color: white;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === التنقل === */
+.nav a {
+  display: block;
+  color: white;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.nav a.active {
+  background-color: white;
+  color: #125F89;
+  font-weight: bold;
+}
+
+/* === المحتوى الرئيسي === */
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+/* === العبارات الترحيبية === */
+.welcome {
+  background: linear-gradient(to right, #E3F2FD, #FFFFFF);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+.welcome h1 {
+  color: #0e4c6b;
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+.welcome p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* === النموذج === */
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  color: #125F89;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+button {
+  background-color: #125F89;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0e4c6b;
+}
+/* === بلاغاتي - عنصر البلاغ === */
+/* صندوق كل بلاغ */
+.report-item {
+  background-color: #e6f0fa;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+/* تأثير عند تمرير الماوس */
+.report-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* صف العنوان + الحالة + الزر */
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* زر عرض التفاصيل */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* ألوان الحالة */
+.status.new {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.status.processing {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.status.done {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chat-box {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f1f9ff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.chat-msg {
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  max-width: 70%;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.chat-me {
+  background-color: #d2eaff;
+  margin-right: auto;
+  text-align: right;
+}
+
+.chat-other {
+  background-color: #e8f0f6;
+  margin-left: auto;
+  text-align: left;
+}
+
+.chat-time {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* نموذج إرسال رسالة */
+.chat-form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Tajawal', sans-serif;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.chat-form button {
+  align-self: flex-end;
+  background-color: #125F89;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.chat-form button:hover {
+  background-color: #0e4c6b;
+}
+
+/* الوضع الليلي */
+body.dark-mode .info-box,
+body.dark-mode .chat-box {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .chat-me {
+  background-color: #2a3b4c;
+}
+
+body.dark-mode .chat-other {
+  background-color: #3a4c5c;
+}
+
+body.dark-mode .chat-form textarea {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark-mode .chat-form button {
+  background-color: #1a6d94;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === إعدادات صفحة الإعدادات (الموظف العادي) === */
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.accordion {
+  background-color: #ffffff;
+  color: #125F89;
+  cursor: pointer;
+  padding: 14px 18px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion:hover {
+  background-color: #eef4fb;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: #125F89;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  right: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #125F89;
+}
+
+input:checked + .slider:before {
+  transform: translateX(-22px);
+}
+
+.logout-btn {
+  background-color: #a94442;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode header {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.dark-mode .card,
+.dark-mode .panel,
+.dark-mode .faq-list p,
+
+.dark-mode .container {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #333;
+}
+
+.dark-mode a,
+.dark-mode .status {
+  color: #aad7ff;
+}
+.faq-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.faq-list li {
+  margin-bottom: 1.5rem;
+}
+.faq-list strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #125F89;
+  font-size: 1rem;
+}
+.faq-list p {
+  font-size: 0.95rem;
+  color: inherit;
+  line-height: 1.6;
+}
+
+
+
+.sidebar {
+  position: relative;
+}
+
+.faq-link {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: right;
+}
+
+.faq-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.faq-link .highlight-link {
+  color: #ffd700; /* لون ذهبي، تقدرين تغيرينه لأي لون تبغينه */
+}
+
+.lang-toggle-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: transparent !important;  /* نلغي الخلفية */
+  box-shadow: none !important;         /* نلغي الظل */
+  padding: 0 !important;
+  border: none !important;
+}
+
+.lang-toggle-container form {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.lang-toggle-container select {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  font-family: 'Tajawal', sans-serif;
+  cursor: pointer;
+  box-shadow: none;
+  transition: 0.3s ease;
+}
+
+.lang-toggle-container select:hover {
+  background-color: #f5f5f5;
+}
