@@ -88,3 +88,5 @@ Teqen/
 ## Author
 
 **Ghadi Alrashdi** · [LinkedIn](https://www.linkedin.com/in/ghadi-alrashdi-431a67276) · [GitHub](https://github.com/Ghadi213)
+
+Built during an IT internship at Al Muzaylif General Hospital (2025).
