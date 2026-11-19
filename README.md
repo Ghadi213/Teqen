@@ -44,6 +44,52 @@ Before Teqen, hospital staff reported IT problems by phone, and requests were of
 - **Secure accounts:** hashed passwords and password reset by email
 - **Two roles:** normal staff and IT staff, each with their own pages
 
+## Screenshots
+
+*Screens from the running system (shown here in Arabic; the interface can be switched to English). User names are hidden.*
+
+### Sign up and account access
+
+<table>
+  <tr>
+    <td align="center"><img src="assets/screenshots/01-registration.png" alt="Registration page" width="380"><br><sub>Registration</sub></td>
+    <td align="center"><img src="assets/screenshots/02-login.png" alt="Login page" width="380"><br><sub>Login</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/screenshots/03-forgot-password.png" alt="Forgot password page" width="380"><br><sub>Forgot password</sub></td>
+    <td align="center"><img src="assets/screenshots/04-reset-password.png" alt="Reset password page" width="380"><br><sub>Reset password</sub></td>
+  </tr>
+</table>
+
+### IT team
+
+<table>
+  <tr>
+    <td align="center"><img src="assets/screenshots/05-current-reports.png" alt="Current tickets dashboard for IT staff" width="380"><br><sub>Current tickets</sub></td>
+    <td align="center"><img src="assets/screenshots/06-report-details.png" alt="Ticket details page for IT staff" width="380"><br><sub>Ticket details</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/screenshots/07-chat.png" alt="Chat between IT staff and the employee inside a ticket" width="380"><br><sub>Chat inside a ticket</sub></td>
+    <td align="center"><img src="assets/screenshots/08-archive.png" alt="Archive of resolved tickets with search and filters" width="380"><br><sub>Archive</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/screenshots/09-reports-dashboard.png" alt="Reports page with pie and bar charts" width="380"><br><sub>Reports and charts</sub></td>
+    <td align="center"><img src="assets/screenshots/10-account-settings.png" alt="Account settings for IT staff" width="380"><br><sub>Account settings</sub></td>
+  </tr>
+</table>
+
+### Hospital staff
+
+<table>
+  <tr>
+    <td align="center"><img src="assets/screenshots/11-new-report.png" alt="New ticket form" width="380"><br><sub>New ticket</sub></td>
+    <td align="center"><img src="assets/screenshots/12-my-reports.png" alt="My tickets page with status and chat notifications" width="380"><br><sub>My tickets</sub></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><img src="assets/screenshots/13-user-settings.png" alt="User settings and help page" width="380"><br><sub>Settings and help</sub></td>
+  </tr>
+</table>
+
 ## How It Works
 
 1. A staff member signs up with their department and submits a ticket.
